@@ -1,0 +1,14 @@
+arsiv/
+eeprom.bin
+.idea/
+mav.parm
+*.parm
+*.pyc
+__pycache__/
+sim/
+sitl/
+terrain/
+*.tlog
+*.tlog*
+*.tlog.raw
+venv/
