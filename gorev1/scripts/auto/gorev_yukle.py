@@ -4,7 +4,9 @@ import time
 from pymavlink import mavutil
 
 import os
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
+from pathlib import Path                                    # yol islemleri icin modern kutuphane
+sys.path.insert(0, str(Path(__file__).resolve().parents[3] / "ortak"))
+
 from utils.lemniscate import lemniscate_noktalari
 from utils.ned_to_global import ned_to_global
 

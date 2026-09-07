@@ -12,3 +12,6 @@ terrain/
 *.tlog*
 *.tlog.raw
 venv/
+.venv/
+logs/
+way.txt

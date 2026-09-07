@@ -1,6 +1,9 @@
 # ============================================================================
 # NOKTA TESTI  —  simulasyon yok, MAVLink yok, sadece liste dogrulama
 # ============================================================================
+import sys                                                  # sys.path'e erisim icin
+from pathlib import Path                                    # yol islemleri
+sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "ortak"))
 
 from utils.lemniscate import lemniscate_noktalari                     # utils klasorundeki lemniscate.py dosyasindan sadece o fonksiyonu al
 
@@ -10,3 +13,6 @@ print("toplam nokta:", len(noktalar))                                 # len() = 
 
 for kuzey, dogu, asagi in noktalar:                                   # Liste 3'luk tuple'lardan olusuyor; her turda ucunu ayri isimlere acar
     print(round(kuzey, 1), round(dogu, 1), round(asagi, 1))           # round(sayi, 1) = 1 ondalik basamaga yuvarla, ekran okunabilir kalsin
+    
+    
+
